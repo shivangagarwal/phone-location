@@ -1,0 +1,19 @@
+{
+  "name": "phone-location",
+  "description": "It finds the location of the phone",
+  "region": "us-east-1",
+  "runtime": "python2.7",
+  "handler": "phoneLocation.lambda_handler",
+  "role": "arn:aws:iam::008904828702:role/aws-lambda-full-access",
+  "requirements": ["phonenumbers", "requests"],
+  "ignore": [
+    "circle\\.yml$",
+    "\\.git$",
+    "/.*\\.pyc$"
+  ],
+  "timeout": 30,
+  "memory": 512,
+  "tracing": {
+    "Mode": "Active"
+  }
+}
